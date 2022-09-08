@@ -13,6 +13,7 @@ class AuthorizePayload:
 class BootNotificationPayload:
     charging_station: Dict
     reason: str
+    custom_data: dict = None
 
 
 @dataclass

@@ -14,6 +14,7 @@ class BootNotificationPayload:
     interval: int
     status: str
     status_info: Optional[Dict] = None
+    custom_data: dict = None
 
 
 @dataclass
@@ -175,6 +176,7 @@ class GetVariablesPayload:
 @dataclass
 class HeartbeatPayload:
     current_time: str
+    custom_data: dict = None
 
 
 @dataclass
